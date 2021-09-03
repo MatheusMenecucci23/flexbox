@@ -12,9 +12,10 @@
 }
 .rodapePrincipal-patrocinadores-list{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: center;/*eixo vertical*/
+    justify-content: space-around;/*eixo horizontal*/
     width: 70%;
+    margin-right: 5%;
 }
 .rodapePrincipal-contatoForm{
     width: 25%;
@@ -29,3 +30,15 @@
     flex-wrap: wrap;/*quebrando a coluna quando o conteúdo dos filhos ultrapassarem o tamanho do pai */
    
 }
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width:23%;
+    justify-content: space-between;/*horizontal*/
+    margin-bottom: 1%;
+}
+
+
