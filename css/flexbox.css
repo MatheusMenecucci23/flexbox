@@ -1,3 +1,5 @@
+
+/*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
 .cabecalhoPrincipal .container{
     display: flex;
     align-items: center;
@@ -40,5 +42,73 @@
     justify-content: space-between;/*horizontal*/
     margin-bottom: 1%;
 }
+.videoSobre .container{
+    display: flex;
 
+ 
+}
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   flex-grow: 3 ;/*quanto mais cresce a caixa, mais crescre - grow - o elemento*/
+}
+.videoSobre-sobre-list{
+    flex-grow: 1;/*ocupa o espaço vazio*/
+}
+.videoSobre-video{
+    flex-grow: 1;/*ocupa o espaço vazio*/
+    flex-shrink: 2;/*o elemento diminue 2 vezes mais do que o normal*/
+}
 
+/* PARTE MOBILE */
+@media(max-width:769px){
+    .cabecalhoPrincipal-nav{
+        flex-direction: column;
+    }
+    .cabecalhoPrincipal .container{
+        flex-direction: column;/*quando colocamos o column o alig-items vira eixo horizontal*/
+        align-items: initial;/*eixo horizontal*/
+        text-align: center;/*texto pro centro*/
+    }
+    .conteudoPrincipal-cursos {
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: initial;/*eixo horizontal*/
+    }
+    .conteudoPrincipal-cursos-link{
+        width: 100vh;
+        margin: 1% 0;
+    }
+    .rodapePrincipal-navMap-list{
+       height: auto;
+    }
+    .rodapePrincipal-patrocinadores .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    
+    }
+    .rodapePrincipal-patrocinadores-list{
+        margin: 0;
+        width: 100%;
+        align-content: space-between;
+    }
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+    .cabecalhoPrincipal-nav-link-app{
+        order:-1;/*ordenação das coluna/lista*/
+    }
+    .videoSobre .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .videoSobre-video{
+        margin: auto;/*alinhando o video*/
+    }
+    
+}
