@@ -28,7 +28,7 @@
 .rodapePrincipal-navMap-list{
     display: flex;
     flex-direction: column;/*colocando um embaixo do outro - em coluna - */
-    height: 250px;/*colocando uma altura*/
+    height: 16rem;/*colocando uma altura*/
     flex-wrap: wrap;/*quebrando a coluna quando o conteúdo dos filhos ultrapassarem o tamanho do pai */
    
 }
