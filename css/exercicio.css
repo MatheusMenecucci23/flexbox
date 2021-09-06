@@ -1,7 +1,5 @@
 .flex-container-pai{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;/*para espaçar no eixo vertical é preciso definir uma altura*/
     height: 100vh;
 }
@@ -10,8 +8,6 @@
     background-color: red;
     width: 5rem;
     height: 5rem;
-    flex-grow: 2;
-    
 }
 .blue{
     background-color: blue;
@@ -30,9 +26,7 @@
 }
 
 .flex-item{
-    flex-grow: 1;/*o navegador pega o espaço inteiro da div pai e divide no número de elementos que possuem essa classe*/
+    flex: 1 1;/*o primeiro número é o flex-grow e o segundo valor é o flex-shrink*/
 
 }
-.primeiro{
-    flex-grow: 2;
-}
+
